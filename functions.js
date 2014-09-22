@@ -1,10 +1,13 @@
 //Write a function called 'welcome' that takes in a name (say Tyler), and then returns 'Welcome, Tyler' (or whatever the name was).
 
   //Function definition here
+function welcome(name){
+  returns('Welcome, ' + name);
+}
 
 
   //Call the function here
-
+welcome('Tyler');
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
@@ -13,10 +16,13 @@
 //Write a function called 'multiply' that takes in two numbers, multiplies them together, and returns the result
 
   //Function definition here
+function multiply(a,b){
+  returns(a + b);
+}
 
 
   //Call the function here
-
+multiply(3,4);
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
@@ -61,3 +67,13 @@ var processors = [{
     inUse: false,
     output: 670
 }];
+
+var measureOutput = function(proc){
+  var total = 0;
+  for(var i = 0; i < measureOutput.length; i++){
+    if(proc[i].inUse){
+      total += proc[i].output;
+    };
+  };
+  console.log(total);
+}
